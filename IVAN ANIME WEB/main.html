@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>IVAN MOVIES</title>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav__logo">
+                <a href="main.html" class="logo"><h1>VANCO</h1></a>  
+            </div>
+            <div class="nav__items">
+                <a href="main.html" class="nav__item" id="homeitem">Home</a>
+                <a href="TVShows.html" class="nav__item">TV Shows</a>
+                <a href="Movies.html" class="nav__item">Movies</a>
+                <a href="N&P.html" class="nav__item">New & Popular</a>
+                <a href="MList.html" class="nav__item">My List</a>
+            </div>
+        </div>
+    </nav>
+    <div class="main-background-video">
+     <video autoplay loop muted id="myVideo" preload="auto">
+            <source src="videos/Marvel Studios' Avengers： Infinity War Official Trailer 1080p.mp4" type="video/mp4">
+        </video>
+        <img src="images/avengers-infinity-war-logo-mvv4il3zcxwqu4qf.png" alt="MBGV-OVERLAY-IMG" class="MBGV-OVERLAY-IMG">
+        <div class="overlay-subtext">
+            <h2>The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.</h2>
+        </div>
+        <div class="mute-button">
+            <button id="muteButton" class="mute-button">Mute</button>
+            <span class="mute-icon"></span>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var video = document.getElementById('myVideo');
+            var muteButton = document.getElementById('muteButton');
+            function toggleMute() {
+                video.muted = !video.muted;
+                if (video.muted) {
+                    muteButton.textContent = 'Unmute';
+                } else {
+                    muteButton.textContent = 'Mute';
+                }
+            }
+            muteButton.addEventListener('click', function() {
+                toggleMute();
+            });
+            video.volume = 1;
+            video.addEventListener('canplay', function() {
+                video.play();
+                video.muted = false;
+            });
+        });
+    </script>
+</div>
+<div class="list">
+    <div class="movies">
+        <a href="">bla bla</a>
+    </div>
+</div>
+</body>
+</html>

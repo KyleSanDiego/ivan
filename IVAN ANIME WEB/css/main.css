@@ -1,0 +1,135 @@
+@font-face {
+    font-family: fontprimary;
+    src: url(../fonts/VSTAR2.ttf);
+}
+@font-face {
+    font-family: netflixsanbold;
+    src: url(../fonts/Netflix\ Sans\ Bold.otf);
+}
+@font-face {
+    font-family: netflixsanmedium;
+    src: url(../fonts/Netflix\ Sans\ Medium.otf);
+}
+@font-face {
+    font-family: netflixsanlight;
+    src: url(../fonts/Netflix\ Sans\ Light.otf);
+}
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1E232A;
+    font-family: fontsecondary;
+    padding-top: 70px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main-nav {
+    background-color: transparent;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    font-family: fontprimary;
+    z-index: 1;
+}
+.main-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo {
+    margin-left: 70px;
+    justify-content: center;
+    margin-right: 1090px;
+    color: red;
+    font-size: 25px;
+    text-decoration: none;
+}
+.logo {
+    text-decoration: none;
+    color: red;
+}
+.nav__items .nav__item {
+    text-decoration: none;
+    text-align: right;
+    justify-content: center;
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 15px;
+    margin-left: 50px;
+}
+.main-background-video {
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden; 
+}
+#myVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    background-size: cover;
+}
+.MBGV-OVERLAY-IMG {
+    position: absolute;
+    top: 60%;
+    left: 70px;
+    width: 500px;
+    
+}
+.overlay-subtext {
+    position: absolute;
+    top: calc(45% + 330px);
+    left: 70px;
+    width: 500px; 
+    font-family: netflixsanlight;
+    color: white;
+    text-align: justify;
+    font-size: 12px;
+    z-index: 3;
+}
+
+.mute-button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10; 
+}
+
+.mute-button{
+    position: absolute;
+    left: 900px;  
+}
+.mute-icon {
+    width: 40px;
+    height: 40px;
+    background-image: url('/images/mute.png'); 
+    background-size: cover;
+}
+
+.mute-icon.muted {
+    background-image: url('/images/sound.png'); 
+}
+.list{
+    
+}
